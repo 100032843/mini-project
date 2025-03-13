@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class playerMovement : MonoBehaviour
-{ 
+{
+
+    public string playerModel;
     [Header("Movement")]
     public float moveSpeed;
     public float groundDrag;
@@ -33,22 +35,24 @@ public class playerMovement : MonoBehaviour
        // At the start, get access to the Rigidbody to control/apply forces
        rb = GetComponent<Rigidbody>();
        rb.freezeRotation = true;
-
+       playerModel = "YogaBall";
        readyToJump = true;
    }
 
    void Update() {
        // ground check
-       grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.3f, whatIsGround);
+       grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 1.0f, whatIsGround);
 
        MyInput();
        SpeedControl();
 
        // handle drag
-       if (grounded)
+       if (grounded){
            rb.drag = groundDrag;
-       else
+       }
+       else{
            rb.drag = 0;
+       }
    }
    private void FixedUpdate()
    {
@@ -59,7 +63,7 @@ public class playerMovement : MonoBehaviour
    {
        horizontalInput = Input.GetAxisRaw("Horizontal");
        verticalInput = Input.GetAxisRaw("Vertical");
-
+       
        // when to jump
        if(Input.GetKey(jumpKey) && readyToJump && grounded)
        {
@@ -77,12 +81,16 @@ public class playerMovement : MonoBehaviour
        moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
        // on ground
-       if(grounded)
+       if (grounded)
+       {
            rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+       }
 
        // in air
-       else if(!grounded)
+       else if (!grounded)
+       {
            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
+       }
    }
 
    private void SpeedControl()
