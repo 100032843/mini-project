@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6107360517950344448}
   m_Layer: 0
   m_Name: sofa_pillow4
-  m_TagString: Untagged
+  m_TagString: SmallObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 1728363233850428233}
   m_Layer: 0
   m_Name: sofa_pillow3
-  m_TagString: Untagged
+  m_TagString: SmallObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -262,7 +262,7 @@ GameObject:
   - component: {fileID: 2282256838403735167}
   m_Layer: 0
   m_Name: sofa_pillow5
-  m_TagString: Untagged
+  m_TagString: SmallObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -367,7 +367,7 @@ GameObject:
   - component: {fileID: 9125366285093331056}
   m_Layer: 0
   m_Name: sofa_pillow2
-  m_TagString: Untagged
+  m_TagString: SmallObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -472,7 +472,7 @@ GameObject:
   - component: {fileID: 5404399859447010915}
   m_Layer: 0
   m_Name: sofa_body
-  m_TagString: Untagged
+  m_TagString: BigObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -610,7 +610,7 @@ GameObject:
   - component: {fileID: 7226564222013054901}
   m_Layer: 0
   m_Name: sofa_pillow1
-  m_TagString: Untagged
+  m_TagString: SmallObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -715,7 +715,7 @@ GameObject:
   - component: {fileID: 8248974850576410793}
   m_Layer: 0
   m_Name: sofa_pillow6
-  m_TagString: Untagged
+  m_TagString: SmallObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
