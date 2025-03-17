@@ -5,6 +5,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 2527a4a53adf1664783b6a1e6d0d8503, type: 3}
@@ -51,9 +52,48 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7879126613981679719, guid: 2527a4a53adf1664783b6a1e6d0d8503, type: 3}
+      propertyPath: m_TagString
+      value: BigObject
+      objectReference: {fileID: 0}
+    - target: {fileID: -3443955318190878903, guid: 2527a4a53adf1664783b6a1e6d0d8503, type: 3}
+      propertyPath: m_TagString
+      value: SmallObject
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2527a4a53adf1664783b6a1e6d0d8503, type: 3}
       propertyPath: m_Name
       value: Kids_room_Toys
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2527a4a53adf1664783b6a1e6d0d8503, type: 3}
+      propertyPath: m_TagString
+      value: BigObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 1876452791180377944, guid: 2527a4a53adf1664783b6a1e6d0d8503, type: 3}
+      propertyPath: m_TagString
+      value: SmallObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 5764445823841303002, guid: 2527a4a53adf1664783b6a1e6d0d8503, type: 3}
+      propertyPath: m_TagString
+      value: SmallObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 6123777865815873512, guid: 2527a4a53adf1664783b6a1e6d0d8503, type: 3}
+      propertyPath: m_TagString
+      value: SmallObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763442790717924271, guid: 2527a4a53adf1664783b6a1e6d0d8503, type: 3}
+      propertyPath: m_TagString
+      value: SmallObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 7302554175287676982, guid: 2527a4a53adf1664783b6a1e6d0d8503, type: 3}
+      propertyPath: m_TagString
+      value: SmallObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 8350274196063437844, guid: 2527a4a53adf1664783b6a1e6d0d8503, type: 3}
+      propertyPath: m_TagString
+      value: SmallObject
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2527a4a53adf1664783b6a1e6d0d8503, type: 3}

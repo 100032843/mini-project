@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5964104518174331116}
   m_Layer: 0
   m_Name: plate_stand
-  m_TagString: Untagged
+  m_TagString: BigObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
