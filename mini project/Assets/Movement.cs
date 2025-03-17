@@ -12,6 +12,7 @@ public class playerMovement : MonoBehaviour
     public float jumpForce;
     public float jumpCooldown;
     public float airMultiplier;
+	public float xRotation;
     bool readyToJump;
     
     public float walkSpeed;
@@ -34,7 +35,9 @@ public class playerMovement : MonoBehaviour
    {
        // At the start, get access to the Rigidbody to control/apply forces
        rb = GetComponent<Rigidbody>();
-       rb.freezeRotation = true;
+	   rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+       //rb.freezerotation.z = true;
+	   //rb.freezerotation.y = true;
        playerModel = "YogaBall";
        readyToJump = true;
    }
@@ -79,7 +82,7 @@ public class playerMovement : MonoBehaviour
    {
        // calculate movement direction
        moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
-
+	   //xRotation = moveDirection;
        // on ground
        if (grounded)
        {
