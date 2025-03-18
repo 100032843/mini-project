@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3315029769805683403}
   m_Layer: 0
   m_Name: singleBed
-  m_TagString: Untagged
+  m_TagString: BigObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -84,7 +84,7 @@ GameObject:
   - component: {fileID: 7871683952505573327}
   m_Layer: 0
   m_Name: singleBed_frame
-  m_TagString: Untagged
+  m_TagString: BigObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -190,7 +190,7 @@ GameObject:
   - component: {fileID: 8068977857231903998}
   m_Layer: 0
   m_Name: singleBed_pillow3
-  m_TagString: Untagged
+  m_TagString: BigObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -295,7 +295,7 @@ GameObject:
   - component: {fileID: 1420626196489495793}
   m_Layer: 0
   m_Name: singleBed_pillow1
-  m_TagString: Untagged
+  m_TagString: BigObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -400,7 +400,7 @@ GameObject:
   - component: {fileID: 624981893371588905}
   m_Layer: 0
   m_Name: singleBed_blanket2
-  m_TagString: Untagged
+  m_TagString: BigObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -505,7 +505,7 @@ GameObject:
   - component: {fileID: 2771620811755197487}
   m_Layer: 0
   m_Name: singleBed_matress
-  m_TagString: Untagged
+  m_TagString: BigObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -610,7 +610,7 @@ GameObject:
   - component: {fileID: 2885673514549452551}
   m_Layer: 0
   m_Name: singleBed_pillow2
-  m_TagString: Untagged
+  m_TagString: BigObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -715,7 +715,7 @@ GameObject:
   - component: {fileID: 4874548798527706500}
   m_Layer: 0
   m_Name: singleBed_blanket1
-  m_TagString: Untagged
+  m_TagString: BigObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
