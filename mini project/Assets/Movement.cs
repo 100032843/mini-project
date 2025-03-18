@@ -45,7 +45,7 @@ public class playerMovement : MonoBehaviour
    void Update() {
        // ground check
        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 1.0f, whatIsGround);
-
+	
        MyInput();
        SpeedControl();
 
@@ -82,7 +82,6 @@ public class playerMovement : MonoBehaviour
    {
        // calculate movement direction
        moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
-	   //xRotation = moveDirection;
        // on ground
        if (grounded)
        {
