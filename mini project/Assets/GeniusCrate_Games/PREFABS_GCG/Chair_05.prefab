@@ -58,7 +58,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 23f95f90adef2364c8b05f392cef8dc3, type: 3}
       propertyPath: m_TagString
-      value: BigObject
+      value: SmallObject
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
