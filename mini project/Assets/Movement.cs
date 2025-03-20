@@ -30,6 +30,7 @@ public class playerMovement : MonoBehaviour
     float verticalInput;
     Vector3 moveDirection;
     Rigidbody rb;
+	public Camera m_Camera;
   
    void Start()
    {
@@ -55,6 +56,15 @@ public class playerMovement : MonoBehaviour
        }
        else{
            rb.drag = 0;
+       }
+	   if (Input.GetMouseButtonDown(0))
+       	   {
+           Vector3 mousePosition = Input.mousePosition;
+           Ray ray = m_Camera.ScreenPointToRay(mousePosition);
+           if (Physics.Raycast(ray, out RaycastHit hit))
+           {
+               // Use the hit variable to determine what was clicked on.
+           }
        }
    }
    private void FixedUpdate()

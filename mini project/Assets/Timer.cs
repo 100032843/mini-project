@@ -12,6 +12,7 @@ public class Timer : MonoBehaviour
     private bool stopFirstTimer;
     private bool stopSecondTimer;
     private string currentPlayerMesh;
+    public string destroyableTag = "SmallObject"; // Set this in the Inspector
     void Start()
     {
         // Search this GameObject and get access to the TMP Text component
@@ -19,6 +20,7 @@ public class Timer : MonoBehaviour
         time = 0f;              // Set the starting time to zero seconds
         stopFirstTimer = false;
         stopSecondTimer = true;
+        DestroyRandomObjects();
     }
 
     void Update()
@@ -45,6 +47,7 @@ public class Timer : MonoBehaviour
 
         // Set the UI text to display this
         timerText.text = string.Format("Time Remaining: " + "{0:00}:{1:00}", minutes, 40 - seconds);
+        
         if (seconds == 40)
         {   
             goalText.text = "You are the seeker!\nThe hider has transformed into an object somewhere.\nClick on objects that are out of place to find them!";
@@ -81,5 +84,22 @@ public class Timer : MonoBehaviour
         // In the original line of code, the {0:00} means:
         // First zero means it is referring to the first variable after the comma (minutes)
         // The colon and two zeros after means display it as a two-digit number
+    }
+
+
+    public void DestroyRandomObjects()
+    {
+        GameObject[] objectsToDestroy = GameObject.FindGameObjectsWithTag(destroyableTag);
+
+        if (objectsToDestroy.Length > 0)
+        {
+            foreach (GameObject obj in objectsToDestroy)
+            {       
+                    if (Random.Range(0,4) == 0)
+                    {
+                        Destroy(obj); 
+                    }
+            }
+        }
     }
 }
