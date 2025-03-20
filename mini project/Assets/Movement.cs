@@ -14,7 +14,7 @@ public class playerMovement : MonoBehaviour
     public float airMultiplier;
 	public float xRotation;
     bool readyToJump;
-    
+    public string player;
     public float walkSpeed;
     public float sprintSpeed;
 
@@ -40,6 +40,7 @@ public class playerMovement : MonoBehaviour
        //rb.freezerotation.z = true;
 	   //rb.freezerotation.y = true;
        playerModel = "YogaBall";
+	   player = "Hider";
        readyToJump = true;
    }
 
@@ -57,13 +58,16 @@ public class playerMovement : MonoBehaviour
        else{
            rb.drag = 0;
        }
-	   if (Input.GetMouseButtonDown(0))
+	   if (Input.GetMouseButtonDown(0) && player == "Seeker")
        	   {
            Vector3 mousePosition = Input.mousePosition;
            Ray ray = m_Camera.ScreenPointToRay(mousePosition);
            if (Physics.Raycast(ray, out RaycastHit hit))
            {
                // Use the hit variable to determine what was clicked on.
+				if (hit.collider.gameObject.CompareTag ("SmallObject")) {
+                        Destroy(hit.collider.gameObject);
+                }
            }
        }
    }
