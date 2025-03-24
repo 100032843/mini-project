@@ -21,6 +21,7 @@ public class Timer : MonoBehaviour
         stopFirstTimer = false;
         stopSecondTimer = true;
         DestroyRandomObjects();
+		PlayerPrefs.SetString("PlayerForm","Hider");
     }
 
     void Update()
@@ -52,7 +53,8 @@ public class Timer : MonoBehaviour
         {   
             goalText.text = "You are the seeker!\nThe hider has transformed into an object somewhere.\nClick on objects that are out of place to find them!";
             time = 0f;
-            //player = "Seeker";
+            //player = "Seeker"
+			PlayerPrefs.SetString("PlayerForm","Seeker");
             stopFirstTimer = true;
             stopSecondTimer = false;
             
@@ -73,9 +75,15 @@ public class Timer : MonoBehaviour
 
         // Set the UI text to display this
         timerText.text = string.Format("Time Remaining: " + "{0:00}:{1:00}", 1-minutes, 60 - seconds);
-        if (minutes == 2)
+        if (minutes == 2 && (PlayerPrefs.GetString("HiderFound")!="Yes"))
         {   
             goalText.text = "Times up!\nThe hider has won!\nThe hider was a "+currentPlayerMesh;
+            time = 0f;
+            stopSecondTimer = true;
+        }
+		if (PlayerPrefs.GetString("HiderFound")=="Yes")
+        {   
+            goalText.text = "Game over!\nThe seeker has won!\nThe hider was a "+currentPlayerMesh+".";
             time = 0f;
             stopSecondTimer = true;
         }

@@ -42,12 +42,13 @@ public class playerMovement : MonoBehaviour
        playerModel = "YogaBall";
 	   player = "Hider";
        readyToJump = true;
+	   PlayerPrefs.SetString("HiderFound","No");
    }
 
    void Update() {
        // ground check
        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 1.0f, whatIsGround);
-	
+
        MyInput();
        SpeedControl();
 
@@ -58,6 +59,8 @@ public class playerMovement : MonoBehaviour
        else{
            rb.drag = 0;
        }
+	   player = PlayerPrefs.GetString("PlayerForm");
+	   
 	   if (Input.GetMouseButtonDown(0) && player == "Seeker")
        	   {
            Vector3 mousePosition = Input.mousePosition;
@@ -68,7 +71,11 @@ public class playerMovement : MonoBehaviour
 				if (hit.collider.gameObject.CompareTag ("SmallObject")) {
                         Destroy(hit.collider.gameObject);
                 }
-           }
+				if (hit.collider.gameObject.CompareTag ("Player")) {
+						Destroy(hit.collider.gameObject);
+						PlayerPrefs.SetString("HiderFound","Yes");
+				}
+           	}
        }
    }
    private void FixedUpdate()
