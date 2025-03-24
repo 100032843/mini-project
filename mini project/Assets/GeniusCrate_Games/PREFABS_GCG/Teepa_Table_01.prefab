@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3355314900565279002}
   - component: {fileID: 7064367325949386105}
   - component: {fileID: 3414595643467684930}
+  - component: {fileID: -9207495528429965656}
   m_Layer: 0
   m_Name: Teepa_Table_01
   m_TagString: BigObject
@@ -83,3 +84,25 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-9207495528429965656
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942177202989918749}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3831166371702914491, guid: 316d7c355b27a824faec56f6088dd66b, type: 3}
