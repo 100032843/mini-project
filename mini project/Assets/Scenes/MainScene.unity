@@ -3193,7 +3193,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d667d93c4ea64647a610ea2b7a8e2b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1411872478}
+  playerHider: {fileID: 1411872478}
+  playerSeeker: {fileID: 701788913}
   rotationSpeed: 5
 --- !u!1 &1036359932
 GameObject:
@@ -4154,6 +4155,7 @@ MonoBehaviour:
   jumpCooldown: 1
   airMultiplier: 1
   xRotation: 0
+  player: 
   walkSpeed: 2
   sprintSpeed: 2
   jumpKey: 32
@@ -4249,7 +4251,7 @@ GameObject:
   - component: {fileID: 1423777190}
   m_Layer: 0
   m_Name: Cube (4)
-  m_TagString: SmallObject
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
