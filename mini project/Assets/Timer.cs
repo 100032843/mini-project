@@ -52,6 +52,7 @@ public class Timer : MonoBehaviour
         {   
             goalText.text = "You are the seeker!\nThe hider has transformed into an object somewhere.\nClick on objects that are out of place to find them!";
             time = 0f;
+            //player = "Seeker";
             stopFirstTimer = true;
             stopSecondTimer = false;
             
