@@ -656,7 +656,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bean Bag
+  m_text: Sofa Pillow
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -683,8 +683,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -747,7 +747,7 @@ GameObject:
   - component: {fileID: 260727533}
   - component: {fileID: 260727532}
   m_Layer: 5
-  m_Name: BeanBagButton (3)
+  m_Name: SofaPillowButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -785,8 +785,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb472e7ef072004428049347dca8776c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonIndex: 3
-  buttonModel: BeanBag
+  buttonIndex: 7
+  buttonModel: Sofa Pillow
 --- !u!114 &260727533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -938,7 +938,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Book
+  m_text: 'Keyboard
 
 '
   m_isRightToLeft: 0
@@ -1031,7 +1031,7 @@ GameObject:
   - component: {fileID: 375005222}
   - component: {fileID: 375005221}
   m_Layer: 5
-  m_Name: BeanBagButton (4)
+  m_Name: TeepaTableButtpn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1069,8 +1069,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb472e7ef072004428049347dca8776c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonIndex: 3
-  buttonModel: BeanBag
+  buttonIndex: 8
+  buttonModel: Teepa Table
 --- !u!114 &375005222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1455,7 +1455,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7854120647061642055, guid: c1b661568473d8448ab9c3fa53457a08, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -414.35
+      value: -412.56
       objectReference: {fileID: 0}
     - target: {fileID: 7854120647061642055, guid: c1b661568473d8448ab9c3fa53457a08, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2183,7 +2183,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bean Bag
+  m_text: Wine Bottle
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2210,8 +2210,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2395,8 +2395,6 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
-  orientation: {fileID: 701788917}
-  m_Camera: {fileID: 963194227}
 --- !u!54 &701788919
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3091,7 +3089,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bean Bag
+  m_text: 'Table
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3290,7 +3290,7 @@ GameObject:
   - component: {fileID: 1036359935}
   - component: {fileID: 1036359934}
   m_Layer: 5
-  m_Name: FanButton
+  m_Name: Stapler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3328,8 +3328,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb472e7ef072004428049347dca8776c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonIndex: 2
-  buttonModel: Fan
+  buttonIndex: 3
+  buttonModel: Stapler
 --- !u!114 &1036359935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3626,7 +3626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb472e7ef072004428049347dca8776c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonIndex: 4
+  buttonIndex: 5
   buttonModel: Toilet
 --- !u!114 &1178381804
 MonoBehaviour:
@@ -3779,7 +3779,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bean Bag
+  m_text: 'Office Chair
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3806,8 +3808,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3908,7 +3910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb472e7ef072004428049347dca8776c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonIndex: 3
+  buttonIndex: 4
   buttonModel: BeanBag
 --- !u!114 &1221065038
 MonoBehaviour:
@@ -4243,8 +4245,6 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
-  orientation: {fileID: 1411872479}
-  m_Camera: {fileID: 963194227}
 --- !u!65 &1411872484
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4265,7 +4265,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.9458951, y: 0.9436189, z: 0.9445883}
-  m_Center: {x: 0, y: 0, z: 0.0006533712}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &1411872485
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4305,18 +4305,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49f21165740076445be7b8d16a831c99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tf: {fileID: 1411872479}
+  staplerMesh: {fileID: 835499534307085403, guid: dfe416dbdccccb0449425356461d7c67, type: 3}
+  staplerMaterial: {fileID: 2100000, guid: 7f64eac4bd640ef44ae0187dbfcb4089, type: 2}
+  staplerHeight: 0
+  sofaPillowMesh: {fileID: -7927248687674137433, guid: edf24df09d11374469d9e785eb18fb26, type: 3}
+  sofaPillowMaterial: {fileID: 2100000, guid: fb698345bbbc4d74ba2ca7b2bb59eb9d, type: 2}
+  sofaPillowHeight: 0
+  tableMesh: {fileID: 3831166371702914491, guid: 316d7c355b27a824faec56f6088dd66b, type: 3}
+  tableMaterial: {fileID: 2100000, guid: 30241aaa8c48c924191374578a2d30d7, type: 2}
+  tableHeight: 0
+  keyboardMesh: {fileID: -3163800863220610298, guid: 18566a61b75973749b7a37b617d7fa4b, type: 3}
+  keyboardMaterial: {fileID: 2100000, guid: 35261150e5398c0439d6fd7481f62b62, type: 2}
+  keyboardHeight: 0
+  officeChairMesh: {fileID: 1329667402764152728, guid: bf186ae0c211e3b46b8c3cf9bc7b1d27, type: 3}
+  officeChairMaterial: {fileID: 2100000, guid: 31e87d42f3ffa2546b1f527e7a0a4b9d, type: 2}
+  officeChairHeight: 0
+  wineBottleMesh: {fileID: 6287996131321723123, guid: 59635930cfddf7b4ab2c5b8541d051f7, type: 3}
+  wineBottleMaterial: {fileID: 2100000, guid: 88712481511a5dc47ba06e517776e5d5, type: 2}
+  wineBottleHeight: 0
   trashcanMesh: {fileID: 117031488727254320, guid: b9f59c5a0fa9eec4698152c59791ae76, type: 3}
   trashcanMaterial: {fileID: 2100000, guid: 0d43cb54095cd1b4f81ef1a9d0e0f8b6, type: 2}
+  trashcanHeight: 0
   deskMesh: {fileID: 4624864942662182433, guid: aa1df8bdfe3b61943a5cbb2344613612, type: 3}
   deskMaterial: {fileID: 2100000, guid: c0999236ab32ad94fb08c06e6694fa49, type: 2}
-  fanMesh: {fileID: -8748156175479226893, guid: 901219eff95dcd44b82fe609a8d34239, type: 3}
-  fanMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  deskHeight: 0
   beanBagMesh: {fileID: 5061449112225014758, guid: 28502d19c68219d44abc46f748d642ea, type: 3}
   beanBagMaterial: {fileID: 2100000, guid: 09a2b41316983a5489b5237f581efe73, type: 2}
-  toiletMesh: {fileID: 0}
-  toiletMaterial: {fileID: 0}
-  bookMesh: {fileID: -2094341069108797418, guid: f99126b2de167a44f84adc255bb688c5, type: 3}
-  bookMaterial: {fileID: 2100000, guid: fac6997ebfb39364db1173ae4a1c49e6, type: 2}
+  beanBagHeight: 0.5
+  toiletMesh: {fileID: -7182916222537406734, guid: 46684b3b7bc48e044ab454f422491fe4, type: 3}
+  toiletMaterial: {fileID: 8631322141121884701, guid: efd1f08bfa5d6ec4b968e57fba68ff02, type: 3}
+  toiletHeight: 0.5
 --- !u!1 &1423777189
 GameObject:
   m_ObjectHideFlags: 0
@@ -4436,7 +4455,7 @@ GameObject:
   - component: {fileID: 1441324931}
   - component: {fileID: 1441324930}
   m_Layer: 5
-  m_Name: BookButton
+  m_Name: KeyboardButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4474,8 +4493,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb472e7ef072004428049347dca8776c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonIndex: 5
-  buttonModel: Book
+  buttonIndex: 6
+  buttonModel: Keyboard
 --- !u!114 &1441324931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4584,7 +4603,7 @@ GameObject:
   - component: {fileID: 1654756893}
   - component: {fileID: 1654756892}
   m_Layer: 5
-  m_Name: BeanBagButton (6)
+  m_Name: OfficeChairButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4622,8 +4641,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb472e7ef072004428049347dca8776c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonIndex: 3
-  buttonModel: BeanBag
+  buttonIndex: 10
+  buttonModel: Office Chair
 --- !u!114 &1654756893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5061,7 +5080,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Fan
+  m_text: 'Stapler
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5273,7 +5294,7 @@ GameObject:
   - component: {fileID: 1850225124}
   - component: {fileID: 1850225123}
   m_Layer: 5
-  m_Name: BeanBagButton (5)
+  m_Name: WineBottleButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5311,8 +5332,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb472e7ef072004428049347dca8776c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonIndex: 3
-  buttonModel: BeanBag
+  buttonIndex: 9
+  buttonModel: Wine Bottle
 --- !u!114 &1850225124
 MonoBehaviour:
   m_ObjectHideFlags: 0

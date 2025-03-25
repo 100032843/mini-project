@@ -25,12 +25,12 @@ public class playerMovement : MonoBehaviour
     public float playerHeight;
     public LayerMask whatIsGround;
     bool grounded;
-    public Transform orientation;
+    private Vector3 orientation;
     float horizontalInput;
     float verticalInput;
     Vector3 moveDirection;
     Rigidbody rb;
-	public Camera m_Camera;
+	private Camera m_Camera;
   
    void Start()
    {
@@ -43,22 +43,35 @@ public class playerMovement : MonoBehaviour
 	   player = "Hider";
        readyToJump = true;
 	   PlayerPrefs.SetString("HiderFound","No");
-	   if (walkSpeed == 2){
-	   		active = true;
-	   }
-	   else{
-			active = false;
-	   }
+       m_Camera = Camera.main;
    }
 
    void Update() {
        // ground check
        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 1.0f, whatIsGround);
-
+	   //Debug.Log(active.ToString());
+	   //Debug.Log(player);
+	   //Debug.Log(walkSpeed);
+	   if (player == "Hider"){
+			if (walkSpeed==2){
+	   			active = true;
+			}
+			if (walkSpeed==3){
+	   			active = false;
+			}
+	   }
+	   if (player == "Seeker"){
+			if (walkSpeed==2){
+	   			active = false;
+			}
+			if (walkSpeed==3){
+	   			active = true;
+			}
+	   }
        if (active){
             MyInput();
+			SpeedControl();
        }
-       SpeedControl();
 
        // handle drag
        if (grounded){
@@ -87,8 +100,10 @@ public class playerMovement : MonoBehaviour
        }
    }
    private void FixedUpdate()
-   {
+   {   
+   if (active){
        MovePlayer();
+   }
    }
 
    private void MyInput()
@@ -109,18 +124,23 @@ public class playerMovement : MonoBehaviour
 
    private void MovePlayer()
    {
+	   orientation = m_Camera.transform.forward;
+	   orientation.y = 0f;
+	   
        // calculate movement direction
-       moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+       moveDirection = orientation * verticalInput + Quaternion.AngleAxis(90, Vector3.up) * orientation* horizontalInput;
+       
+       //transform.forward = moveDirection;
        // on ground
        if (grounded)
        {
-           rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+           rb.AddForce(moveSpeed * 10f*moveDirection.normalized, ForceMode.Force);
        }
 
        // in air
        else if (!grounded)
        {
-           rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
+           rb.AddForce(moveSpeed * 10f * airMultiplier * moveDirection.normalized, ForceMode.Force);
        }
    }
 
