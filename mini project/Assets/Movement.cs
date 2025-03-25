@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class playerMovement : MonoBehaviour
 {
-
+	private bool active;
     public string playerModel;
     [Header("Movement")]
     public float moveSpeed;
@@ -43,13 +43,21 @@ public class playerMovement : MonoBehaviour
 	   player = "Hider";
        readyToJump = true;
 	   PlayerPrefs.SetString("HiderFound","No");
+	   if (walkSpeed == 2){
+	   		active = true;
+	   }
+	   else{
+			active = false;
+	   }
    }
 
    void Update() {
        // ground check
        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 1.0f, whatIsGround);
 
-       MyInput();
+       if (active){
+            MyInput();
+       }
        SpeedControl();
 
        // handle drag
