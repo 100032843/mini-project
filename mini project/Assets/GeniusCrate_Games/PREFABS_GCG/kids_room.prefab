@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6938293825246921188}
   - component: {fileID: 6391685382061810928}
   - component: {fileID: 2816327287623029144}
+  - component: {fileID: -3084403784962133937}
   m_Layer: 0
   m_Name: kids_room
   m_TagString: BigObject
@@ -83,3 +84,25 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-3084403784962133937
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5802676542438078220}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3339981936708986748, guid: 563bb75e38bdd5c49aa9be45ef443fe0, type: 3}
