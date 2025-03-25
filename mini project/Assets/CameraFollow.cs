@@ -35,7 +35,6 @@ public class CameraController : MonoBehaviour
 
         // Apply rotation to the offset.
         offset = rotation * offset;
-
         // Make the camera look at the player.
         transform.LookAt(playerFocus.transform);
         if (PlayerPrefs.GetString("PlayerForm") == "Seeker")
