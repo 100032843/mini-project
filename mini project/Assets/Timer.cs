@@ -26,7 +26,7 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        time += 30 * Time.deltaTime; // Add the fraction of a second that has passed this frame
+        time += Time.deltaTime; // Add the fraction of a second that has passed this frame
         if (stopFirstTimer == false)
         {
             updateTimer(time);      // Update the UI display with the new time
