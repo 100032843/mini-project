@@ -7,7 +7,10 @@ public class ButtonSelect : MonoBehaviour
     public string buttonModel;
     public void buttonSelected()
     {
-        PlayerPrefs.SetString("PlayerModel",buttonModel);
+        if (PlayerPrefs.GetString("PlayerForm") == "Hider")
+        {
+            PlayerPrefs.SetString("PlayerModel",buttonModel);
+        }
         print(PlayerPrefs.GetString("PlayerModel"));
     }
 }

@@ -52,6 +52,7 @@ public class playerMovement : MonoBehaviour
 	   //Debug.Log(active.ToString());
 	   //Debug.Log(player);
 	   //Debug.Log(walkSpeed);
+	   print(PlayerPrefs.GetString("PlayerModel"));
 	   if (player == "Hider"){
 			if (walkSpeed==2){
 	   			active = true;
@@ -135,12 +136,14 @@ public class playerMovement : MonoBehaviour
        if (grounded)
        {
            rb.AddForce(moveSpeed * 10f*moveDirection.normalized, ForceMode.Force);
+           PlayerPrefs.SetString("HiderIsGrounded","Yes");
        }
 
        // in air
        else if (!grounded)
        {
            rb.AddForce(moveSpeed * 10f * airMultiplier * moveDirection.normalized, ForceMode.Force);
+           PlayerPrefs.SetString("HiderIsGrounded","No");
        }
    }
 
