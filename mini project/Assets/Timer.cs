@@ -26,7 +26,7 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        time += Time.deltaTime; // Add the fraction of a second that has passed this frame
+        time += 15 * Time.deltaTime; // Add the fraction of a second that has passed this frame
         if (stopFirstTimer == false)
         {
             updateTimer(time);      // Update the UI display with the new time
@@ -104,7 +104,7 @@ public class Timer : MonoBehaviour
         {
             foreach (GameObject obj in objectsToDestroy)
             {       
-                    if (Random.Range(0,4) == 0)
+                    if (Random.Range(0,0) == 0)
                     {
                         Destroy(obj); 
                     }

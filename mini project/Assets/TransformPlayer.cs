@@ -67,7 +67,7 @@ public class TransformPlayer : MonoBehaviour
         msh = GetComponent<MeshFilter>();
         mshrnd = GetComponent<MeshRenderer>();
         bc = GetComponent<BoxCollider>();
-        //tf = GetComponent<Transform>();
+        tf = GetComponent<Transform>();
         playerHeight = bc.center.y;
     }
 
@@ -139,7 +139,16 @@ public class TransformPlayer : MonoBehaviour
             playerHeight = toiletHeight;
             playerDimensions = new Vector3(2, 2, 2);
         }
+
+        /*if (PlayerPrefs.GetString("Grounded") == "Yes")
+        {
+            tf.localPosition = new Vector3(tf.localPosition.x, tf.localPosition.y+2f, tf.localPosition.z);
+        }*/
         bc.center = new Vector3(bc.center.x, playerHeight, bc.center.z);
+        if (tf.localPosition.y < -2)
+        {
+            tf.localPosition = new Vector3(tf.localPosition.x, 3, tf.localPosition.z);
+        }
         tf.localScale = playerDimensions;
         
     }
